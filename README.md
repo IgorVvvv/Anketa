@@ -1,2 +1,0 @@
-# Anketa
-MySite
