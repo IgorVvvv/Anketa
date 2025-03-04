@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+   <html lang="ru">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+       <title>Анкета</title>
+   </head>
+   <body>
+       <h1>Анкета</h1>
+       <form action="/submit" method="post">
+           <label for="surname">Фамилия (необязательно)</label><br>
+           <input type="text" name="surname" id="surname" placeholder="Введите фамилию..."><br><br>
+
+           <label for="name">Имя (необязательно)</label><br>
+           <input type="text" name="name" id="name" placeholder="Введите имя..."><br><br>
+
+           <label for="question1">1. Нравиться ли тебе слушать музыку?</label><br>
+           <select name="question1" id="question1">
+               <option value="Да">Да</option>
+               <option value="Нет">Нет</option>
+               <option value="Не знаю">Не знаю</option>
+           </select><br><br>
+
+           <label for="question2">2. Меняется ли твое настроение, когда слушаешь музыку?</label><br>
+           <select name="question2" id="question2">
+               <option value="Да">Да</option>
+               <option value="Нет">Нет</option>
+               <option value="Не знаю">Не знаю</option>
+           </select><br><br>
+
+           <label for="question3">3. Нужна ли музыка в повседневной жизни?</label><br>
+           <select name="question3" id="question3">
+               <option value="Да">Да</option>
+               <option value="Нет">Нет</option>
+               <option value="Не знаю">Не знаю</option>
+           </select><br><br>
+
+           <label for="question4">4. Какой жанр музыки тебе больше всего нравится?</label><br>
+           <input type="text" name="question4" id="question4" placeholder="Введите текст..." required><br><br>
+
+            <label for="question5">5. В каких обстоятельствах вы чаще всего слушаете музыку (например, во время учёбы, отдыха, общения с друзьями)?</label><br>
+           <input type="text" name="question5" id="question5" placeholder="Введите текст..."  required><br><br>
+
+           <label for="question6">6. Согласен ли ты с тем, что музыка может влиять на организм человека?</label><br>
+           <select name="question6" id="question6">
+               <option value="Да">Да</option>
+               <option value="Нет">Нет</option>
+               <option value="Не знаю">Не знаю</option>
+           </select><br><br>
+
+           <label for="question7">7. Сколько времени в сутки ты слушаешь музыку (суммарно, например, по ТВ, в школе, по дороге домой и т.д.)?</label><br>
+           <input type="text" name="question7" id="question7" placeholder="Введите текст..."  required><br><br>
+
+           <label for="question8">8. Вы замечали изменения в своем поведении или самоощущении после прослушивания определенной музыки?</label><br>
+           <select name="question8" id="question8">
+               <option value="Да">Да</option>
+               <option value="Нет">Нет</option>
+               <option value="Не знаю">Не знаю</option>
+           </select><br><br>
+
+           <label for="question9">9. Как вы относитесь к критике современной музыки со стороны взрослых или старшего поколения?</label><br>
+           <select name="question9" id="question9">
+               <option value="Да">Да</option>
+               <option value="Нет">Нет</option>
+               <option value="Не знаю">Не знаю</option>
+           </select><br><br>
+
+           <label for="question10">10. Как социальные сети и платформы для стриминга музыки влияют на ваши музыкальные предпочтения?</label><br>
+           <textarea name="question10" id="question10" rows="4" placeholder="Введите текст..." ></textarea><br><br>
+
+           <button type="submit">Отправить</button>
+       </form>
+   </body>
+   </html>
